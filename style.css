@@ -15,8 +15,10 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
   padding: 1%;
+  position: fixed;
+  top: 0;
 }
 
 .logo {
@@ -69,12 +71,24 @@ nav {
   left: 85%;
 }
 
+.social{
+    height: 10vw;
+}
+
+aside{
+    float: right;
+    margin-top: 15%;
+    position: sticky;
+    top: 35%;
+}
+
 .main {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 3%;
   overflow-x: hidden;
+  margin-top: 8%;
 }
 
 .main img {
@@ -129,12 +143,88 @@ textarea:focus {
 }
 
 
+.info{
+    background-color: #483EFF;
+    height: 30vw;
+    width:80%;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.card-info{
+    height: 5vw;
+    width: 15vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: white;
+    border: 0.2rem solid white;
+}
 
 
+.card-info-1{
+    background-color: #BCE0F6;
+    color: black;
+    border: none;
+}
+
+.right{
+    width: 60%;
+    height: 85%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 4%;
+}
 
 
+.right h2{
+    line-height: 1.5;
+}
+
+.right pre{
+    font-family: 'Roboto';
+    padding: 2%;
+}
+
+.right pre span{
+    font-weight: 500;
+}
 
 
+.right button{
+    background-color: black;
+    border: none;
+    color: white;
+    width: 13%;
+    padding: 1.5%;
+    font-weight: 400;
+    font-size:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    border-radius: 5px;
+    position: relative;
+    left: 85%;
+    top: 10%;
+}
 
 
 @media (max-width: 1300px) {
@@ -169,5 +259,9 @@ textarea:focus {
 
   .card{
     width: 90%;
+  }
+
+  .social{
+    height: 20vw;
   }
 }
