@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Delius+Unicase:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans";
+}
+
+.container {
+  width: 100vw;
+}
+
+nav {
+  background-color: #6f6af7;
+  color: white;
+  font-size: 1.3vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  padding: 1%;
+}
+
+.logo {
+  font-family: "delius unicase";
+  color: white;
+  font-weight: 700;
+  font-size: 4vw;
+}
+
+.down {
+  height: 1.4vw;
+  margin-top: 5%;
+}
+
+.search-icon {
+  height: 1.2vw;
+}
+
+#search-box input {
+  border: none;
+}
+
+#search-box input:focus {
+  outline: none;
+}
+
+#search-box {
+  background-color: white;
+  display: flex;
+  padding: 0.45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 1em;
+}
+
+.hamburger {
+  height: 2.5vw;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.chat{
+    height: 8vw;
+    position: fixed;
+    top: 85%;
+    left: 90%;
+}
