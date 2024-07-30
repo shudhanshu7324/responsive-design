@@ -74,3 +74,25 @@ nav {
     top: 85%;
     left: 90%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px){
+    .chat{
+        height: 30vw;
+        left:70%
+    }
+}
