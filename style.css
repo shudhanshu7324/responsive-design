@@ -8,10 +8,6 @@
   font-family: "DM Sans";
 }
 
-.container {
-  width: 100vw;
-}
-
 nav {
   background-color: #6f6af7;
   color: white;
@@ -66,33 +62,59 @@ nav {
   align-items: center;
 }
 
-
-
-.chat{
-    height: 8vw;
-    position: fixed;
-    top: 85%;
-    left: 90%;
+.chat {
+  height: 18%;
+  position: fixed;
+  top: 85%;
+  left: 85%;
 }
 
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  overflow-x: hidden;
+}
 
+.main img {
+  height: 33vw;
+}
 
+textarea {
+  padding: 3%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #e5d8ff;
+  resize: none;
+  color: #6f7373;
+  font-size: 1.2rem;
+}
 
+textarea:focus {
+  outline: none;
+}
 
+@media (max-width: 1300px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
+@media (max-width: 500px) {
+  .chat {
+    height: 30vw;
+    left: 70%;
+  }
 
+  .main img{
+    height: 44vh;
+    padding: 5%;
+  }
 
-
-
-
-
-
-
-
-
-@media (max-width:500px){
-    .chat{
-        height: 30vw;
-        left:70%
-    }
+  textarea{
+    width: 90%;
+    margin-left: 5%;
+  }
 }
